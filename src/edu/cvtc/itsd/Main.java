@@ -42,7 +42,16 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
-        super.insertString(fb, offset, stringToAdd, attr);
+        Document doc = fb.getDocument();
+        StringBuilder sb = new StringBuilder();
+        sb.append(doc.getText(0, doc.getLength()));
+        sb.insert(offset, stringToAdd);
+
+        if (test(sb.toString())) {
+          super.insertString(fb, offset, stringToAdd, attr);
+        } else {
+          Toolkit.getDefaultToolkit().beep();
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
@@ -54,10 +63,28 @@ public class Main {
         throws BadLocationException
     {
       if (fb.getDocument() != null) {
-        super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        Document doc = fb.getDocument();
+        StringBuilder sb = new StringBuilder();
+        sb.append(doc.getText(0, doc.getLength()));
+        sb.replace(offset, offset + lengthToDelete, stringToAdd);
+
+        if (test(sb.toString())) {
+          super.replace(fb, offset, lengthToDelete, stringToAdd, attr);
+        } else {
+          Toolkit.getDefaultToolkit().beep();
+        }
       }
       else {
         Toolkit.getDefaultToolkit().beep();
+      }
+    }
+
+    public boolean test(String stringToTest) {
+      try {
+        Integer.parseInt(stringToTest);
+        return true;
+      } catch (NumberFormatException e) {
+        return false;
       }
     }
   }
