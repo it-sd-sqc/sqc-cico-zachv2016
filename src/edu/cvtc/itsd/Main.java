@@ -294,6 +294,7 @@ public class Main {
     panelMain.add(updateButton);
 
     panelMain.add(Box.createVerticalGlue());
+    frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
     // Status panel ///////////////////////////////////////////////////////////
     JPanel panelStatus = new JPanel();
