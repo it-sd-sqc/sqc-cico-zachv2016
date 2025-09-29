@@ -69,3 +69,12 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 ## Expected results
 * Should display no letters in the input field
+
+# Module 5: Ticket 502 - clean shutdown
+
+## Test Steps
+1. Build and run CiCo
+2. Close the CiCo application window that pops up
+
+## Expected Results
+* Should display Clean shutdown in the console after step 2
