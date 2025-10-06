@@ -61,4 +61,13 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 6: New color scheme
 
+## Test steps
+1. Build and run CiCo
+2. Enter 11111111
+3. Click "ok" button
+4. Enter 00000000
+
+## Expected results
+* The main panel (with the number entry) should be dark grey with white text, the error panel should display red with white text, and the status panel should display a green background with white text.
