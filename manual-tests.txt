@@ -63,6 +63,27 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 
 # Module 6: New color scheme
 
+# Module 4: Ticket 401 - only accept numerical card numbers
+
+## Test Steps
+1. Build and run CiCo
+2. Type "test" into the test field
+
+## Expected results
+* Should display no letters in the input field
+
+# Module 5: Ticket 502 - clean shutdown
+
+## Test Steps
+1. Build and run CiCo
+2. Close the CiCo application window that pops up
+
+## Expected Results
+* Should display Clean shutdown in the console after step 2
+
+
+# Module 6: New color scheme
+
 ## Test steps
 1. Build and run CiCo
 2. Enter 11111111
