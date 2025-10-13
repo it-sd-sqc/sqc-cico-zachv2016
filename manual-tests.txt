@@ -61,6 +61,7 @@ Use `./build.sh` to build CiCo and `./run.sh` to run it if using the command lin
 ## Expected results
 * Should display "Developer" for the user name.
 
+# Module 6: New color scheme
 
 # Module 4: Ticket 401 - only accept numerical card numbers
 
